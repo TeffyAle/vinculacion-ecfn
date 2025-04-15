@@ -2476,3 +2476,7 @@ width: 99%;
 display:none;
 }
 }
+
+#experience {
+  margin-top: 50px; /* Adjust the value (in pixels, em, rem, etc.) as needed */
+}
