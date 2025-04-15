@@ -1257,24 +1257,29 @@ transition: all .3s;
 }
 
 .contact_info {
-    font-size: 15px;
-    margin: 0 0 0 20px;
-    padding-left: 0;
+  font-size: 15px;
+  margin: 0 auto; /* Changed left margin to auto for centering */
+  padding-left: 0;
+  text-align: center; /* Center inline content within .contact_info */
 }
 
-.contact_info  h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 0 30px;
-    color: #fff;
+.contact_info h4 { /* Changed h3 to h4 to match your HTML */
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0; /* Adjusted margin for better spacing when centered */
+  color: #fff;
 }
 
 .contact_info p {
-    line-height: 28px;
-    display: block;
-    font-size: 16px;
-    color: #ffffff;
-    margin: 0 0 30px;
+  line-height: 28px;
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 10px 0 20px; /* Adjusted margin for better spacing */
+}
+
+.contact_info .detail {
+  margin-bottom: 20px; /* Add spacing between each detail block */
 }
 
 .social_links {
