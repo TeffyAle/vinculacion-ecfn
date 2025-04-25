@@ -127,14 +127,46 @@ r<!doctype html>
     <!-- Title -->
    <head>
   <style>
-    .portfolio_img img,
-    .portfolio_img video {
-      width: 100%;
-      aspect-ratio: 1280 / 573;
-      object-fit: cover;
-      display: block;
-    }
-  </style>
+  /* Centrar galería y limitar ancho */
+  .portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Imágenes y videos con tamaño uniforme */
+  .portfolio_img img,
+  .portfolio_img video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  /* Tamaño de los títulos dentro del figcaption */
+  figcaption h2 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  figcaption span {
+    font-size: 0.9rem;
+  }
+
+  /* Opcional: centrado del texto del título */
+  figcaption div {
+    text-align: center;
+  }
+</style>
+
 </head>
 
 <h2>Physics Open House 2024</h2> 
