@@ -481,7 +481,7 @@ strong {
 
 .hero::after {
   content: "";
-  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgba(197, 168, 60, 0.7) 100%) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%) repeat scroll 0% 0%;
   position: absolute;
   top: 0;
   right: 0;
