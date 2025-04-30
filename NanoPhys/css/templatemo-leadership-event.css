@@ -1,26 +1,17 @@
-/*
-
-TemplateMo 575 Leadership Event
-
-https://templatemo.com/tm-575-leadership-event
-
-*/
-
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #0dcaf0;
-  --secondary-color:              #0d6efd;
+  --primary-color:                #EFC422;
+  --secondary-color:              #24618E;
   --section-bg-color:             #f0f8ff;
   --dark-color:                   #000000;
-  --navbar-bg-color:              #273053;
+  --navbar-bg-color:              #000000;
   --p-color:                      #717275;
   --highlight-icon-color:         #ff0100;
 
-  --body-font-family:             'DM Sans', sans-serif;
+  --body-font-family:             'Ubuntu';
 
   --h1-font-size:                 62px;
   --h2-font-size:                 48px;
@@ -476,24 +467,32 @@ strong {
   HERO              
 -----------------------------------------*/
 .hero {
+  background-image: url('../images/XPS-Background.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+    min-height: 600px;
+    width: 100%;
+  overflow: hidden;
   position: relative;
-  height: calc(90vh - 84px);
+  height: calc(90vh - 10px);
 }
 
 .hero::after {
   content: "";
-  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.1) 0%, rgba(197, 168, 60, 0.7) 100%) repeat scroll 0% 0%;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-bottom: -5px;
+  margin-bottom: 0px;
 }
 
 .hero-text {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -507,6 +506,12 @@ strong {
 
 .video-wrap {
   z-index: -100;
+}
+
+.custom-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .custom-video {
