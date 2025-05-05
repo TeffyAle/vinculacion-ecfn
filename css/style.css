@@ -19,7 +19,9 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 a, a:hover, a:active {
@@ -81,10 +83,10 @@ a, a:hover, a:active {
   background: darkred;
 }
 .item:nth-child(2) {
-  background: red;
+  background: yellow;
 }
 .item:nth-child(3) {
-  background: orange;
+  background: dark;
 }
 .caption {
 position: absolute;
