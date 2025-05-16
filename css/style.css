@@ -79,6 +79,26 @@ a, a:hover, a:active {
 .carousel-inner .item {
   height: 100%;
 }
+/* Make carousel captions responsive */
+.carousel-inner .caption h2 {
+  font-weight: 800;
+  font-size: 6vw; /* Responsive font size */
+  line-height: 1.2;
+}
+
+/* Optional: Adjust font size for very small or very large screens */
+@media (max-width: 576px) {
+  .carousel-inner .caption h2 {
+    font-size: 7vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-inner .caption h2 {
+    font-size: 3vw;
+  }
+}
+
 .item:nth-child(1) {
   background: darkred;
 }
