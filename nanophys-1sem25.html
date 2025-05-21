@@ -172,7 +172,6 @@
                 </div>
             </section>
 
-
 <section class="schedule section-padding" id="section_3">
     <div class="container">
         <div class="row">
@@ -189,13 +188,13 @@
                                 text-align: center;
                             }
                             table {
-                                width: 90%; /* Adjusted width to accommodate the new column */
+                                width: 80%; /* Reverted to 80% width */
                                 margin: auto;
                                 border-collapse: collapse;
                                 background-color: #fff;
                             }
                             th, td {
-                                padding: 12px 15px; /* Adjusted padding */
+                                padding: 12px 20px; /* Reverted to original padding */
                                 border: 1px solid #ccc;
                                 text-align: left;
                             }
@@ -207,12 +206,16 @@
                                 background-color: #fafad4;
                             }
                             .speaker-photo {
-                                width: 50px; /* Adjust as needed */
-                                height: 50px;
-                                border-radius: 50%; /* Makes the image circular */
-                                object-fit: cover; /* Ensures the image covers the area without distortion */
-                                display: block; /* Allows margin: auto for centering */
-                                margin: 0 auto; /* Centers the image horizontally */
+                                width: 60px; /* Slightly larger for better visibility */
+                                height: 60px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                                display: block; /* Important for centering */
+                                margin: 0 auto 8px auto; /* Centered with bottom margin */
+                            }
+                            .speaker-name {
+                                text-align: center; /* Center the speaker name */
+                                display: block; /* Ensure it takes full width for centering */
                             }
                         </style>
                     </head>
@@ -225,76 +228,89 @@
                                 <tr>
                                     <th>Hora</th>
                                     <th>Título</th>
-                                    <th>Conferencista</th>
-                                    <th>Foto</th> </tr>
+                                    <th>Conferencista</th> </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>08:00 - 08:30</td>
                                     <td>Registro & Colocación de Pósters</td>
                                     <td>-</td>
-                                    <td></td> </tr>
+                                </tr>
                                 <tr>
                                     <td>08:30 - 09:00</td>
                                     <td>Bienvenida</td>
-                                    <td>Dr. Gema González</td>
-                                    <td><img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Gema González" class="speaker-photo"></td>
+                                    <td>
+                                        <img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Gema González" class="speaker-photo">
+                                        <span class="speaker-name">Dr. Gema González</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>09:00 - 09:20</td>
                                     <td>TBD</td>
-                                    <td>Dr. Lenin Jácome</td>
-                                    <td><img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Lenin Jácome" class="speaker-photo"></td>
+                                    <td>
+                                        <img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Lenin Jácome" class="speaker-photo">
+                                        <span class="speaker-name">Dr. Lenin Jácome</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>09:20 - 09:40</td>
                                     <td>Nanomateriales en la Escuela de Ciencias Físicas y Nanotecnología</td>
-                                    <td>Dr. Sarah Briceño</td>
-                                    <td><img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Sarah Briceño" class="speaker-photo"></td>
+                                    <td>
+                                        <img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Sarah Briceño" class="speaker-photo">
+                                        <span class="speaker-name">Dr. Sarah Briceño</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>09:40 - 10:00</td>
                                     <td>Sistemas complejos en Yachay Tech</td>
-                                    <td>Dr. Mario Cosenza</td>
-                                    <td><img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Mario Cosenza" class="speaker-photo"></td>
+                                    <td>
+                                        <img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Mario Cosenza" class="speaker-photo">
+                                        <span class="speaker-name">Dr. Mario Cosenza</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>10:00 - 10:20</td>
                                     <td>Coffee Break</td>
                                     <td>-</td>
-                                    <td></td> </tr>
+                                </tr>
                                 <tr>
                                     <td>10:20 - 12:00</td>
                                     <td>Presentaciones de Pósters</td>
                                     <td>-</td>
-                                    <td></td> </tr>
+                                </tr>
                                 <tr>
                                     <td>12:00 - 14:00</td>
                                     <td>Almuerzo</td>
                                     <td>-</td>
-                                    <td></td> </tr>
+                                </tr>
                                 <tr>
                                     <td>14:00 - 14:20</td>
                                     <td>Más allá del Silicio, semiconductores emergentes</td>
-                                    <td>Dr. Estefanía Almache</td>
-                                    <td><img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Estefanía Almache" class="speaker-photo"></td>
+                                    <td>
+                                        <img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Estefanía Almache" class="speaker-photo">
+                                        <span class="speaker-name">Dr. Estefanía Almache</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>14:20 - 14:40</td>
                                     <td>TBD</td>
-                                    <td>Dr. Carlos Reinoso</td>
-                                    <td><img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Carlos Reinoso" class="speaker-photo"></td>
+                                    <td>
+                                        <img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Carlos Reinoso" class="speaker-photo">
+                                        <span class="speaker-name">Dr. Carlos Reinoso</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>14:40 - 16:00</td>
                                     <td>Presentaciones de Pósters</td>
                                     <td>-</td>
-                                    <td></td> </tr>
+                                </tr>
                                 <tr>
                                     <td>16:00 - 16:30</td>
                                     <td>Ceremonia de Clausura y Premiación</td>
-                                    <td>Dr. Gema González</td>
-                                    <td><img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Gema González" class="speaker-photo"></td>
+                                    <td>
+                                        <img src="NanoPhys/images/speakers/speaker_placeholder.jpg" alt="Foto de Dr. Gema González" class="speaker-photo">
+                                        <span class="speaker-name">Dr. Gema González</span>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
