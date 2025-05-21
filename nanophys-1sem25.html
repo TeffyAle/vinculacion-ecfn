@@ -1061,7 +1061,8 @@
         <script src="NanoPhys/js/click-scroll.js"></script>
         <script src="NanoPhys/js/custom.js"></script>
 
-	 <script>
+
+	<script>
 	document.addEventListener("DOMContentLoaded", function () {
 	  document.querySelectorAll("img.enlargeable").forEach(img => {
 	    img.style.cursor = "zoom-in";
@@ -1080,7 +1081,6 @@
 	      lightbox.appendChild(closeBtn);
 	      document.body.appendChild(lightbox);
 	
-	      // Click outside image or on button closes the lightbox
 	      lightbox.addEventListener("click", (e) => {
 	        if (e.target === lightbox || e.target === closeBtn) {
 	          lightbox.remove();
@@ -1090,7 +1090,6 @@
 	  });
 	});
 	</script>
-
 
     </body>
 </html>
