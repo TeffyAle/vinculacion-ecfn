@@ -1061,34 +1061,28 @@
         <script src="NanoPhys/js/click-scroll.js"></script>
         <script src="NanoPhys/js/custom.js"></script>
 
-
 	<script>
-	document.addEventListener("DOMContentLoaded", function () {
-	  document.querySelectorAll("img.enlargeable").forEach(img => {
-	    img.style.cursor = "zoom-in";
-	    img.addEventListener("click", () => {
-	      const lightbox = document.createElement("div");
-	      lightbox.className = "lightbox";
+	    document.querySelectorAll('img.enlargeable').forEach(img => {
+	      img.addEventListener('click', () => {
+	        const overlay = document.createElement('div');
+	        overlay.className = 'lightbox';
 	
-	      const enlargedImg = document.createElement("img");
-	      enlargedImg.src = img.src;
+	        const bigImg = document.createElement('img');
+	        bigImg.src = img.src;
 	
-	      const closeBtn = document.createElement("span");
-	      closeBtn.innerHTML = "&times;";
-	      closeBtn.className = "close-btn";
+	        overlay.appendChild(bigImg);
+	        document.body.appendChild(overlay);
 	
-	      lightbox.appendChild(enlargedImg);
-	      lightbox.appendChild(closeBtn);
-	      document.body.appendChild(lightbox);
-	
-	      lightbox.addEventListener("click", (e) => {
-	        if (e.target === lightbox || e.target === closeBtn) {
-	          lightbox.remove();
-	        }
+	        // Close on overlay click or ESC key
+	        overlay.addEventListener('click', () => overlay.remove());
+	        document.addEventListener('keydown', function handler(e) {
+	          if (e.key === 'Escape') {
+	            overlay.remove();
+	            document.removeEventListener('keydown', handler);
+	          }
+	        });
 	      });
 	    });
-	  });
-	});
 	</script>
 
     </body>
