@@ -1061,34 +1061,36 @@
         <script src="NanoPhys/js/click-scroll.js"></script>
         <script src="NanoPhys/js/custom.js"></script>
 
-        <script>
-	  // Get modal elements
-	  const modal = document.getElementById("imageModal");
-	  const modalImg = document.getElementById("modalImg");
-	  const captionText = document.getElementById("caption");
-	  const closeBtn = document.getElementsByClassName("close")[0];
+	 <script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  document.querySelectorAll("img.enlargeable").forEach(img => {
+	    img.style.cursor = "zoom-in";
+	    img.addEventListener("click", () => {
+	      const lightbox = document.createElement("div");
+	      lightbox.className = "lightbox";
 	
-	  // Attach click event to all poster images
-	  document.querySelectorAll(".poster-image-container img").forEach(img => {
-	    img.addEventListener("click", function () {
-	      modal.style.display = "block";
-	      modalImg.src = this.src;
-	      captionText.innerHTML = this.alt;
+	      const enlargedImg = document.createElement("img");
+	      enlargedImg.src = img.src;
+	
+	      const closeBtn = document.createElement("span");
+	      closeBtn.innerHTML = "&times;";
+	      closeBtn.className = "close-btn";
+	
+	      lightbox.appendChild(enlargedImg);
+	      lightbox.appendChild(closeBtn);
+	      document.body.appendChild(lightbox);
+	
+	      // Click outside image or on button closes the lightbox
+	      lightbox.addEventListener("click", (e) => {
+	        if (e.target === lightbox || e.target === closeBtn) {
+	          lightbox.remove();
+	        }
+	      });
 	    });
 	  });
-	
-	  // Close modal
-	  closeBtn.onclick = function () {
-	    modal.style.display = "none";
-	  }
-	
-	  // Close modal when clicking outside the image
-	  modal.onclick = function (e) {
-	    if (e.target === modal) {
-	      modal.style.display = "none";
-	    }
-	  }
+	});
 	</script>
+
 
     </body>
 </html>
