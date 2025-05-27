@@ -79,6 +79,26 @@ a, a:hover, a:active {
 .carousel-inner .item {
   height: 100%;
 }
+/* Make carousel captions responsive */
+.carousel-inner .caption h2 {
+  font-weight: 800;
+  font-size: 6vw; /* Responsive font size */
+  line-height: 1.2;
+}
+
+/* Optional: Adjust font size for very small or very large screens */
+@media (max-width: 576px) {
+  .carousel-inner .caption h2 {
+    font-size: 7vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-inner .caption h2 {
+    font-size: 3vw;
+  }
+}
+
 .item:nth-child(1) {
   background: darkred;
 }
@@ -271,9 +291,9 @@ figure.effect-oscar:hover img {
 body {
     background: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
-    color: #888888;
+    color: #030303;
     margin: 0;
 }
 
@@ -491,7 +511,7 @@ p {
 .top_cont_outer {
     background: #ED5441;
     position: relative; 
-    background: url('../img/main2.jpg') no-repeat;
+    background: url('../img/Maestria_Fisica_Fundamental_Universidad_Yachay_Tech-1536x1536.jpg') no-repeat;
 	background-size: cover; 
 }
 
@@ -613,7 +633,8 @@ div#main-nav {
 
 #service {
     padding: 60px 0px;
-    background: url('../img/slide4.jpg') top left no-repeat !important;
+    background: url('../img/SL_073119_22070_26.jpg') bottom right no-repeat !important;
+    background-size: 1500px auto !important;
 }
 #service h2{
   color: #fff;
@@ -1844,7 +1865,7 @@ padding:80px 0 60px;
 
 	
 /* Portfolio*/	
-	
+
 	
 .project-image-slider .bx-wrapper .bx-next {
     background: url("images/project_slider_right.png") no-repeat;

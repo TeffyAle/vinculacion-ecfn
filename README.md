@@ -1,9 +1,10 @@
 # Página Web de Vinculación ECFN - Yachay Tech
 
 ### Creada por:
-- Estefany
-- Luis
-- Wladimir
+- Estefany Espinoza
+- Luis Ibarra
+- Mariannly Márquez
+- Wladimir Banda-Barragán
 
 
-### Proyecto Impact-YT
+### Proyecto Impact-YT 2025
